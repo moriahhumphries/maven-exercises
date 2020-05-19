@@ -9,8 +9,8 @@ public class MyFirstTest {
     @Test
     public void testEquals(){
         String codeUpTest = "Codeup";
-//        assertEquals(codeUpTest, "CodeUp");
-        assertNotEquals(codeUpTest, "CodeUp");
+        assertEquals("CodeUp", codeUpTest);
+        assertNotEquals("CodeUp",codeUpTest);
 
     }
 
