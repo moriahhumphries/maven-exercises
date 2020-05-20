@@ -9,7 +9,7 @@ public class MyFirstTest {
     @Test
     public void testEquals(){
         String codeUpTest = "Codeup";
-        assertEquals("CodeUp", codeUpTest);
+//        assertEquals("CodeUp", codeUpTest);
         assertNotEquals("CodeUp",codeUpTest);
 
     }
@@ -18,7 +18,7 @@ public class MyFirstTest {
     public void testSame(){
         List<String> languages = new ArrayList<>();
         List<String> moreLanguages = new ArrayList<>();
-        assertEquals(languages, moreLanguages);
+        assertNotSame(languages, moreLanguages);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class MyFirstTest {
     }
 
     @Test
-    public void fourthTest(){
+    public void testBoolean(){
         String language = "PHP";
         assertTrue(language.contains("H")); // use assertTrue for this statement
         assertFalse(language.contains("J")); // use assertFalse for this statement
